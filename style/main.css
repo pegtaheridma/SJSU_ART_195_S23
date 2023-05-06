@@ -1,3 +1,12 @@
+:root {
+  /* Master setup -- Change colors here! */
+  --bg-color: rgb(18, 34, 70);
+  --text-color: rgb(215, 215, 215);
+  --link-color: rgb(253, 167, 223);
+  --link-bg-color: rgb(66, 51, 92);
+  --transition: 0.25s ease-in-out;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,12 +15,12 @@
 
 
 body {
-  background-color: #122246;
+  background-color: var(--bg-color);
   text-decoration: none;
   text-align: left;
   font-size: 1rem;
   font-family: Lucida Console, monospace;
-  color: rgb(216, 216, 216);
+  color: var(--text-color);
   line-height: 1.5;
 }
 
@@ -31,13 +40,15 @@ body {
 
 a {
   text-decoration: none;
-  color: rgb(240, 240, 240);
-  transition: 0.25s ease-in-out;
+  padding: 5px;
+  color: var(--text-color);
+  transition: var(--transition);
 }
 
 a:hover {
-  color: #FDA7DF;
-  transition: 0.25s ease-in-out;
+  background-color: var(--link-bg-color);
+  color: var(--link-color);
+  transition: var(--transition);
 }
 
 
