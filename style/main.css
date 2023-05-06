@@ -29,10 +29,12 @@ body {
 a {
   text-decoration: none;
   color: #eee;
+  transition: 0.25s ease-in-out;
 }
 
-a:hover{
+a:hover {
   color: #FDA7DF;
+  transition: 0.25s ease-in-out;
 }
 
 
@@ -49,8 +51,9 @@ a:hover{
 
 
 .column,
-.column-2, .column-3 {
-/* style columns here */
+.column-2,
+.column-3 {
+  /* style columns here */
   padding: 1rem;
   /* left and right margins are 0 so it won't mess up the column layout... top and bottom have a little margin */
   margin: 2rem 0 2rem 0;
@@ -58,8 +61,10 @@ a:hover{
 }
 
 /* make sure images fill the div and have proportional height */
-img, .column img,
-.column-2 img, .column-3 img {
+img,
+.column img,
+.column-2 img,
+.column-3 img {
   width: 100%;
   height: auto;
 }
@@ -82,9 +87,11 @@ img, .column img,
   .column {
     flex-basis: 100%;
   }
+
   .column-2 {
     flex-basis: 50%;
   }
+
   .column-3 {
     flex-basis: 33%;
   }
