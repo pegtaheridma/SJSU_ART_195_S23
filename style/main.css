@@ -40,7 +40,7 @@ body {
 
 a {
   text-decoration: none;
-  padding: 5px;
+  padding: 8px 10px;
   color: var(--text-color);
   transition: var(--transition);
 }
@@ -51,6 +51,9 @@ a:hover {
   transition: var(--transition);
 }
 
+p>a {
+  font-size: 1.2rem;
+}
 
 
 
