@@ -1,10 +1,10 @@
 :root {
   /* Master setup -- Change colors here! */
-  --bg-color: rgb(18, 34, 70);
+  --bg-color: rgb(18, 47, 70);
   --text-color: rgb(215, 215, 215);
-  --link-color: rgb(253, 167, 223);
-  --link-bg-color: rgb(66, 51, 92);
-  --transition: 0.25s ease-in-out;
+  --link-color: rgb(255, 151, 218);
+  --link-bg-color: rgb(47, 20, 94);
+  --transition: 0.3s ease-in-out;
 }
 
 * {
@@ -18,10 +18,11 @@ body {
   background-color: var(--bg-color);
   text-decoration: none;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-family: Lucida Console, monospace;
   color: var(--text-color);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .header {
@@ -32,11 +33,18 @@ body {
   width: 100%;
 }
 
+h1 {
+  font-size: 2.25rem;
+}
+
 /* .footer {
   width: 100%;
   padding: 1rem;
 } */
 
+ul {
+  list-style-type: none
+}
 
 a {
   text-decoration: none;
@@ -55,6 +63,14 @@ p>a {
   font-size: 1.2rem;
 }
 
+a>img {
+  transition: var(--transition);
+}
+
+a>img:hover {
+  scale: 1.025;
+  transition: var(--transition);
+}
 
 
 /* ~~~~ responsive divs + columns ~~~~ */
@@ -65,7 +81,13 @@ p>a {
   padding: 1rem;
 }
 
-
+.section-break {
+  width: 100%;
+  flex-basis: 100%;
+  background-color: var(--link-color);
+  padding: 1.5px;
+  margin: 10px;
+}
 
 .column,
 .column-2,
@@ -73,7 +95,7 @@ p>a {
   /* style columns here */
   padding: 1rem;
   /* left and right margins are 0 so it won't mess up the column layout... top and bottom have a little margin */
-  margin: 2rem 0 2rem 0;
+  margin: 0.75rem 0;
   width: 100%;
 }
 
@@ -101,7 +123,8 @@ img,
     padding: 5rem;
   }
 
-  .column {
+  .column,
+  .section-break {
     flex-basis: 100%;
   }
 
