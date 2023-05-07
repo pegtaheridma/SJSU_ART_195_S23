@@ -4,6 +4,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  font-family: 'Karla', sans-serif;
 
 
 }
@@ -67,10 +68,12 @@ a>img:hover {
 
 p {
     color: #F5F5F5;
+    font-size: 20px;
 }
 
 h2 {
   color: #F5F5F5;
+  font-size: 36px;
 }
 
 /* ~~~~ responsive divs + columns ~~~~ */
@@ -140,7 +143,9 @@ img,
   }
 }
 
-
+a:hover {
+  color: #e0218a;
+}
 /*------------about header------------------------------------*/
 
 .about-header {
@@ -164,7 +169,6 @@ hr {
 .main_about-header {
   width: 100%;
   text-align: center;
-  background: rgba(189,193,212, 0.7);
   font-size: 20px;
   color: #F5F5F5;
 }
@@ -221,7 +225,7 @@ img {
   width: auto;
   padding: 16px;
   margin-top: -50px;
-  color: #970248;
+  color: #e0218a;
   font-weight: bold;
   font-size: 20px;
   border-radius: 0 3px 3px 0;
@@ -330,4 +334,5 @@ img {
 .subnav:hover .subnav-content {
   display: block;
 }
+
 
