@@ -1,3 +1,12 @@
+:root {
+  /* Master setup -- Change colors here! */
+  --bg-color: rgb(18, 47, 70);
+  --text-color: rgb(215, 215, 215);
+  --link-color: rgb(255, 151, 218);
+  --link-bg-color: rgb(47, 20, 94);
+  --transition: 0.3s ease-in-out;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,18 +15,26 @@
 
 
 body {
-  background-color: #0c2461;
+  background-color: var(--bg-color);
   text-decoration: none;
   text-align: left;
-  font-size: 1rem;
+  font-size: 1.05rem;
   font-family: Lucida Console, monospace;
-  color: white;
+  color: var(--text-color);
   line-height: 1.5;
+  overflow-x: hidden;
 }
 
 .header {
   text-align: center;
   margin: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.25rem;
 }
 
 /* .footer {
@@ -25,17 +42,35 @@ body {
   padding: 1rem;
 } */
 
+ul {
+  list-style-type: none
+}
 
 a {
   text-decoration: none;
-  color: #eee;
+  padding: 8px 10px;
+  color: var(--text-color);
+  transition: var(--transition);
 }
 
-a:hover{
-  color: #FDA7DF;
+a:hover {
+  background-color: var(--link-bg-color);
+  color: var(--link-color);
+  transition: var(--transition);
 }
 
+p>a {
+  font-size: 1.2rem;
+}
 
+a>img {
+  transition: var(--transition);
+}
+
+a>img:hover {
+  scale: 1.025;
+  transition: var(--transition);
+}
 
 
 /* ~~~~ responsive divs + columns ~~~~ */
@@ -46,20 +81,29 @@ a:hover{
   padding: 1rem;
 }
 
-
+.section-break {
+  width: 100%;
+  flex-basis: 100%;
+  background-color: var(--link-color);
+  padding: 1.5px;
+  margin: 10px;
+}
 
 .column,
-.column-2, .column-3 {
-/* style columns here */
+.column-2,
+.column-3 {
+  /* style columns here */
   padding: 1rem;
   /* left and right margins are 0 so it won't mess up the column layout... top and bottom have a little margin */
-  margin: 2rem 0 2rem 0;
+  margin: 0.75rem 0;
   width: 100%;
 }
 
 /* make sure images fill the div and have proportional height */
-img, .column img,
-.column-2 img, .column-3 img {
+img,
+.column img,
+.column-2 img,
+.column-3 img {
   width: 100%;
   height: auto;
 }
@@ -79,12 +123,15 @@ img, .column img,
     padding: 5rem;
   }
 
-  .column {
+  .column,
+  .section-break {
     flex-basis: 100%;
   }
+
   .column-2 {
     flex-basis: 50%;
   }
+
   .column-3 {
     flex-basis: 33%;
   }
