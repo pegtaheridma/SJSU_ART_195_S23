@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART:OFFICIAL::YourName</title>
+    <link rel="stylesheet" href="../style/main.css">
+
+    <style>
+    * {box-sizing: border-box}
+    body {font-family: Verdana, sans-serif; margin:0}
+    .mySlides {display: none}
+    img {vertical-align: middle;}
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      padding-left: 0px;
+      padding-right: 0px;
+      top: 50%;
+      width: auto;
+      padding: 16px;
+      margin-top: -22px;
+      color: white;
+      font-weight: bold;
+      font-size: 18px;
+      transition: 0.6s ease;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: sticky;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: purple;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active, .dot:hover {
+      background-color: white;
+    }
+
+    /* Fading animation */
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+      from {opacity: .4}
+      to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .prev, .next,.text {font-size: 11px}
+    }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <!-- this is the image at the top for our show title - note that it links back to the home page index.html, don't change this -->
+            <a href="/index.html" style="background-color: var(--bg-color);"> <img src="../assets-main/title.png"
+                    alt=""></a>
+            <h1>Shimin Chen (Mandy)</h1>
+            <p><a target="_blank" href="https://newart.city/show/mandy-chen">&#xbb; View in New Art City</a> | <a target="_blank"
+                    href="https://mandycxc.github.io/Shimin-Chen/">Artist Website &#xab;</a></p>
+
+        </div>
+        <div class="column-2">
+            <!-- This image file is from your assets folder. Be careful with capitalization. -->
+
+        </div>
+        <div class="column-2">
+
+        </div>
+        <div class="section-break"></div>
+        <div class="column">
+
+          <img src="assets/mm2.png"  alt=""
+          style="width:1000px;height:550px;">
+          <img src="assets/mm3.png"  alt=""
+          style="width:1000px;height:550px;">
+<br>
+<br>
+<h2> Model in Blender<h2>
+          <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 5</div>
+              <img src="assets/mm4.png" style="width:100%">
+              <div class="text">Brozen Tree</div>
+            </div>
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 5</div>
+              <img src="assets/mm5.png" style="width:100%">
+              <div class="text">JiuCai</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 5</div>
+              <img src="assets/mm6.png" style="width:100%">
+              <div class="text">Temple</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 5</div>
+              <img src="assets/mm7.png" style="width:100%">
+              <div class="text">Rock</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">5 / 5</div>
+              <img src="assets/mm8.png" style="width:100%">
+              <div class="text">Osmanthus Tree</div>
+            </div>
+
+<br><br>
+
+
+            </div>
+            <div style="text-align:center">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+              <span class="dot" onclick="currentSlide(5)"></span>
+            </div>
+            <!-- Next and previous buttons -->
+            <!-- <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> -->
+          </div>
+
+
+          <!-- The dots/circles -->
+          <br>
+
+
+            <h2>Magpie Mountain</h2>
+            <p>As I grew up, I learned that many cultural relics have been lost in the long river of history. Many of them are damaged, even with only a small piece remaining. Some cultural relics, even if they are intact, do not have the opportunity to return to their own country. The damage and loss of cultural relics made me feel regretful, and also inspired me to create Magpie Mountain.
+
+I chose Shan Hai Jing, which is a very ancient Chinese book. It introduces various strange and unusual plants, animals, and landforms. Because this book contains many descriptions, I chose the first chapter to showcase a glimpse of what I saw. At the same time, I also incorporated cultural relics from the Qing and Shang Dynasty, as I wanted to show the audience artifacts that have been passed down from ancient times. I hope that the audience can use their eyes and their hearts to feel the charm passed down from ancient times, and that we should cherish cultural relics even more.
+</p>
+        </div>
+
+        <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+          let i;
+          let slides = document.getElementsByClassName("mySlides");
+          let dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+        }
+
+        </script>
+
+        <!-- <div class="footer">
+            <p>&copy; 2023 Artist Name. All rights reserved.</p>
+        </div> -->
+    </div>
+</body>
+
+</html>
