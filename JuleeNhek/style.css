@@ -269,7 +269,7 @@ img {
 .column1 {
   float: left;
   width: 16.66%;
-object-fit: cover;
+  background-color: black;
 }
 
 /* Add a transparency effect for thumnbail images */
