@@ -1,0 +1,338 @@
+body {
+  background-image: url("assets/water.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: 'Karla', sans-serif;
+
+
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.header {
+  text-align: center;
+  margin: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+h1 {
+  font-size: 2.25rem;
+}
+
+/* .footer {
+  width: 100%;
+  padding: 1rem;
+} */
+
+ul {
+  list-style-type: none
+
+}
+
+a {
+  text-decoration: none;
+  padding: 8px 10px;
+  color: var(--text-color);
+  transition: var(--transition);
+}
+
+a:hover {
+  background-color: var(--link-bg-color);
+  color: var(--link-color);
+  transition: var(--transition);
+}
+
+p>a {
+  font-size: 1.2rem;
+
+}
+
+a>img {
+  transition: var(--transition);
+}
+
+a>img:hover {
+  scale: 1.025;
+  transition: var(--transition);
+}
+
+p {
+    color: #F5F5F5;
+    font-size: 20px;
+}
+
+h2 {
+  color: #F5F5F5;
+  font-size: 36px;
+}
+
+/* ~~~~ responsive divs + columns ~~~~ */
+
+.container {
+  flex-wrap: wrap;
+  padding: 1rem;
+
+
+}
+
+.section-break {
+  width: 100%;
+  flex-basis: 100%;
+  background-color: var(--link-color);
+  padding: 1.5px;
+  margin: 10px;
+}
+
+.column,
+.column-2,
+.column-3 {
+  /* style columns here */
+  padding: 1rem;
+  /* left and right margins are 0 so it won't mess up the column layout... top and bottom have a little margin */
+  margin: 0.75rem 0;
+  width: 100%;
+}
+
+/* make sure images fill the div and have proportional height */
+img,
+.column img,
+.column-2 img,
+.column-3 img {
+  width: 100%;
+  height: auto;
+
+}
+
+/* This is a mobile-first design, meaning the width of columns for mobile are set here (100% of the width or a single column layout). Column width for browsers are set in the media query  */
+
+.column,
+.column-2,
+.column-3 {
+  flex-basis: 100%;
+
+}
+
+
+/* this media query defines the width of columns on a device WIDER than 640px - on a browser */
+@media screen and (min-width: 640px) {
+  .container {
+    padding: 5rem;
+  }
+
+  .column,
+  .section-break {
+    flex-basis: 100%;
+  }
+
+  .column-2 {
+    flex-basis: 50%;
+  }
+
+  .column-3 {
+    flex-basis: 33%;
+  }
+}
+
+a:hover {
+  color: #e0218a;
+}
+/*------------about header------------------------------------*/
+
+.about-header {
+  padding: 2rem 2rem;
+  color:#F5F5F5; 
+}
+
+.about-header h1{
+  color: #F5F5F5; 
+  font-size: 50px;
+}
+
+
+hr {
+  border: 0.5px solid #F5F5F5;
+ 
+}
+
+
+
+.main_about-header {
+  width: 100%;
+  text-align: center;
+  font-size: 20px;
+  color: #F5F5F5;
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.5em;
+  color: #F5F5F5; 
+
+}
+
+li {
+  display: inline;
+}
+
+div.transbox {
+  margin: 5px;
+  border: 1px solid #9A9A9A;
+}
+
+div.transbox p {
+  margin: 1%;
+  font-weight: bold;
+}
+
+img {
+  vertical-align: middle;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: #e0218a;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+  text-align: center;
+  background-color: #222;
+  padding: 2px 16px;
+  color: white;
+}
+
+.row1:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Six columns side by side */
+.column1 {
+  float: left;
+  width: 16.66%;
+  background-color: black;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+  opacity: 0.6;
+
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+/*------------------subnav!-----------------*/
+
+.subnav {
+  float: right;
+  overflow: hidden;
+
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+/*  padding: 14px 16px;*/
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+ color:#970248;
+ background: white;
+}
+
+.subnav-content {
+   display: none;
+  position: absolute;
+  background-color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+
+}
+
+.subnav-content a {
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+ color:#970248;
+ background: white;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+
