@@ -108,7 +108,7 @@ a>img:hover {
   width: 100%;
   flex-basis: 100%;
   background-color: var(--link-color);
-  padding: 5px;
+  padding: 3px;
   margin: 2rem;
 }
 
