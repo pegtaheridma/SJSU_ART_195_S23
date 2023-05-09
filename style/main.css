@@ -1,9 +1,9 @@
 :root {
   /* Master setup -- Change colors here! */
-  --bg-color: rgb(0, 0, 0);
-  --text-color: rgb(253, 253, 253);
+  --bg-color: rgb(20, 20, 20);
+  --text-color: rgb(250, 250, 250);
   --link-color: rgb(255, 151, 218);
-  --link-bg-color: rgb(47, 20, 94);
+  --link-bg-color: rgb(78, 42, 139);
   --transition: 0.3s ease-in-out;
 }
 
@@ -25,6 +25,23 @@ body {
   overflow-x: hidden;
 }
 
+.main-header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-header img {
+  max-width: 500px;
+  margin: 2rem;
+}
+
 .header {
   text-align: center;
   margin: 3rem;
@@ -34,8 +51,8 @@ body {
 }
 
 .header img {
-  max-width: 50%;
-  max-height: 60%;
+  max-width: 500px;
+  margin: 2rem;
 }
 
 h1 {
@@ -54,7 +71,7 @@ ul {
 a {
   text-decoration: none;
   padding: 8px 10px;
-  color: var(--text-color);
+  color: var(--link-color);
   transition: var(--transition);
 }
 
@@ -84,14 +101,15 @@ a>img:hover {
   display: flex;
   flex-wrap: wrap;
   padding: 1rem;
+  padding-top: 0;
 }
 
 .section-break {
   width: 100%;
   flex-basis: 100%;
   background-color: var(--link-color);
-  padding: 1.5px;
-  margin: 10px;
+  padding: 3px;
+  margin: 2rem;
 }
 
 .column,
@@ -113,6 +131,12 @@ img,
   height: auto;
 }
 
+.column-3 img {
+  height: 100%;
+  object-fit: contain;
+  /* overflow: hidden; */
+}
+
 /* This is a mobile-first design, meaning the width of columns for mobile are set here (100% of the width or a single column layout). Column width for browsers are set in the media query  */
 
 .column,
@@ -126,6 +150,7 @@ img,
 @media screen and (min-width: 640px) {
   .container {
     padding: 5rem;
+    padding-top: 0;
   }
 
   .column,
