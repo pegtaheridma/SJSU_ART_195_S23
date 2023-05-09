@@ -25,6 +25,11 @@ body {
   width: 100%;
 }
 
+.header img {
+  max-width: 500px;
+  margin: 2rem;
+}
+
 h1 {
   font-size: 2.25rem;
 }
@@ -36,7 +41,6 @@ h1 {
 
 ul {
   list-style-type: none
-
 }
 
 a {
@@ -67,8 +71,8 @@ a>img:hover {
 }
 
 p {
-    color: #F5F5F5;
-    font-size: 20px;
+  color: #F5F5F5;
+  font-size: 20px;
 }
 
 h2 {
@@ -146,22 +150,23 @@ img,
 a:hover {
   color: #e0218a;
 }
+
 /*------------about header------------------------------------*/
 
 .about-header {
   padding: 2rem 2rem;
-  color:#F5F5F5; 
+  color: #F5F5F5;
 }
 
-.about-header h1{
-  color: #F5F5F5; 
+.about-header h1 {
+  color: #F5F5F5;
   font-size: 50px;
 }
 
 
 hr {
   border: 0.5px solid #F5F5F5;
- 
+
 }
 
 
@@ -179,7 +184,7 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0.5em;
-  color: #F5F5F5; 
+  color: #F5F5F5;
 
 }
 
@@ -286,6 +291,7 @@ img {
 .demo:hover {
   opacity: 1;
 }
+
 /*------------------subnav!-----------------*/
 
 .subnav {
@@ -295,27 +301,28 @@ img {
 }
 
 .subnav .subnavbtn {
-  font-size: 16px;  
+  font-size: 16px;
   border: none;
   outline: none;
   color: white;
-/*  padding: 14px 16px;*/
+  /*  padding: 14px 16px;*/
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
-.navbar a:hover, .subnav:hover .subnavbtn {
- color:#970248;
- background: white;
+.navbar a:hover,
+.subnav:hover .subnavbtn {
+  color: #970248;
+  background: white;
 }
 
 .subnav-content {
-   display: none;
+  display: none;
   position: absolute;
   background-color: black;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   padding: 12px 16px;
   z-index: 1;
 
@@ -327,12 +334,10 @@ img {
 }
 
 .subnav-content a:hover {
- color:#970248;
- background: white;
+  color: #970248;
+  background: white;
 }
 
 .subnav:hover .subnav-content {
   display: block;
 }
-
-
