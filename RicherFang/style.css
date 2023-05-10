@@ -1,0 +1,35 @@
+.vertical-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .container {
+    width: 900px;
+    height: 2900px;
+    background-color: black;
+    color: white;
+    margin: 30px;
+    display: flex;
+    justify-content: left;
+    padding: 30px;
+    font-size: 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+  .image {
+    width: 800px;
+    height: 400px;
+  }
+  body {
+    background-image: url("https://cdn.glitch.me/ed5d59a2-f24e-4a08-9442-7cff85b20944%2FFP2.png?v=1635739457007");
+    background-size: cover;
+    height: 100vh;
+    margin: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  
